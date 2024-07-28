@@ -1,0 +1,70 @@
+/* Primary button background color */
+.bg-primary {
+    background: #008080 !important;
+}
+
+/* Custom image styling */
+.custom-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the specified dimensions */
+    display: block;
+    position: absolute;
+}
+
+/* Post image styling */
+.post-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
+
+/* Item margin */
+.item {
+    margin-left: 10px;
+}
+
+/* Card and image container styles */
+.card {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 300px; /* Fixed max-width */
+    height: 400px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container {
+    height: 200px; /* Fixed height for image container */
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+.card-content {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .card {
+        height: auto; /* Allow height to adjust on smaller screens */
+    }
+
+    .img-container {
+        height: auto; /* Allow image container height to adjust */
+    }
+
+    .img-container img {
+        height: auto; /* Allow image height to adjust */
+    }
+}

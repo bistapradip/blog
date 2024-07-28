@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome to IBLOGS{% endblock %}
+
+{% block content %}
+<div class="container-custom">
+    <h3>{{ category.title }}</h3>
+    <p>{{ category.description }}</p>
+    <img src="{{ category.image.url }}" alt="{{ category.title }}" style="width:100px;height:auto;">
+</div>
+
+<div class="container">
+    <div class="row">
+        {% for post in posts %}
+        <div class="col s12 m6">
+            <h4>{{ post.title }}</h4>
+            <p>{{ post.content|safe }}</p>
+            <img src="{{ post.image.url }}" alt="{{ post.title }}" class="responsive-img">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

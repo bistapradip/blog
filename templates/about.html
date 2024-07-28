@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome to IBLOGS{% endblock %}
+
+{% block content %}
+{%load static%}
+    <style>
+        .header-image {
+            background: url('{% static 'images/header-image.jpg' %}') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .header-image h1 {
+            margin: 0;
+            padding: 0;
+        }
+        .about-section {
+            padding: 50px 20px;
+        }
+        .about-section h2 {
+            margin-bottom: 30px;
+        }
+    </style>
+
+    <!-- Header -->
+    <header>
+        <div class="header-image">
+            <h1>About Us</h1>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section container">
+        <div class="row">
+            <div class="col s12 m6">
+                <h2>Who am I?</h2>
+                <p>
+                    Welcome to the website! I am a dedicated and enthusiastic tech learner with a deep passion for exploring the latest advancements in technology.
+                </p>
+                <p>
+                    I continually seek to expand my knowledge and skills through hands-on projects and continuous learning.
+                    My curiosity drives me to stay updated with emerging trends and innovations, and I enjoy sharing my insights and experiences with the tech community.
+                    Whether it's coding, experimenting with new tools, or diving into complex problems, 
+                    I am always excited to embrace the challenges and opportunities that technology offers.
+                </p>
+            </div>
+            <div class="col s12 m6">
+                <img src="{% static 'images/Pradip.jpg' %}" alt="About Us" class="responsive-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Contact Me</h5>
+                    <p class="grey-text text-lighten-4">
+                        Email: pradip.bista@outlook.com<br>
+                        Phone: +9779817748609<br>
+                        Address: Maitidevi, Kathmandu, Nepal
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Follow Me</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/pradeep.bista.100">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/pradeep___bista/">Instagram</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/pradip-bista-5555562a9/">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2024 Pradip Bista
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+{% endblock %}
